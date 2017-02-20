@@ -43,17 +43,17 @@
      );
    var model = $(go.TreeModel);
    model.nodeDataArray = [
-     { "key": 1, "text": "QBurst" },
-     { "key": 2, "text": "Manas Nair", "parent": 1, "choice": "G02" },
-     { "key": 3, "text": "Adani Shantigram Community Mobile App", "parent": 2, "choice": "G03" },
-     { "key": 4, "text": "Sunny Diamonds e-Commerce Platform", "parent": 2, "choice": "B01" },
-     { "key": 5, "text": "Project Managers", "parent": 3, "choice": "G04" },
-     { "key": 6, "text": "Business Analyst", "parent": 3, "choice": "G05" },
-     { "key": 7, "text": "Team Lead", "parent": 3, "choice": "T01" },
-     { "key": 8, "text": "Developer", "parent": 3, "fill": "green", "choice": "B02" },
-     { "key": 9, "text": "UX Designer", "parent": 3, "choice": "T02" },
-     { "key": 9, "text": "Designer", "parent": 3, "choice": "T02" },
-     { "key": 10, "text": "Tester", "parent": 3, "choice": "B03" }
+     { "key": 1, "text": "QBurst", "choice": "1"},
+     { "key": 2, "text": "Manas Nair", "parent": 1, "choice": "2" },
+     { "key": 3, "text": "Adani Shantigram Community Mobile App", "parent": 2, "choice": "3" },
+     { "key": 4, "text": "Sunny Diamonds e-Commerce Platform", "parent": 2, "choice": "3" },
+     { "key": 5, "text": "Project Managers", "parent": 3, "choice": "4" },
+     { "key": 6, "text": "Business Analyst", "parent": 3, "choice": "4" },
+     { "key": 7, "text": "Team Lead", "parent": 3, "choice": "4" },
+     { "key": 8, "text": "Developer", "parent": 3, "fill": "green", "choice": "4" },
+     { "key": 9, "text": "UX Designer", "parent": 3, "choice": "4" },
+     { "key": 9, "text": "Designer", "parent": 3, "choice": "4" },
+     { "key": 10, "text": "Tester", "parent": 3, "choice": "4" }
    ];
    myDiagram.model = model;
  }
