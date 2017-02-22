@@ -1,5 +1,4 @@
  function init() {
-   if (window.goSamples) goSamples();
    var $$ = go.GraphObject.make;
    myDiagram =
      $$(go.Diagram, "myDiagramDiv", {
