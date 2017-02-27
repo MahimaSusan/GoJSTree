@@ -12,12 +12,12 @@
      });
 
    myDiagram.add(
-     $$(go.Part, "Table", { position: new go.Point(0, 0), selectable: false },
-      $$(go.Panel, "Horizontal", { row: 1, alignment: go.Spot.Left },
+     $$(go.Part, "Table", { position: new go.Point(1200, 0), selectable: false },
+       $$(go.Panel, "Horizontal", { row: 1, alignment: go.Spot.Left },
          $$(go.Shape, "Rectangle", { desiredSize: new go.Size(10, 10), fill: "#000", margin: 5 }),
          $$(go.TextBlock, "Project Manager Name", { font: "700 13px Droid Serif, sans-serif" })
        ),
-      $$(go.Panel, "Horizontal", { row: 2, alignment: go.Spot.Left },
+       $$(go.Panel, "Horizontal", { row: 2, alignment: go.Spot.Left },
          $$(go.Shape, "Rectangle", { desiredSize: new go.Size(10, 10), fill: "#4c4c4c", margin: 5 }),
          $$(go.TextBlock, "Project Name", { font: "700 13px Droid Serif, sans-serif" })
        ),
@@ -37,7 +37,7 @@
          $$(go.Shape, "Rectangle", { desiredSize: new go.Size(10, 10), fill: "#857A47", margin: 5 }),
          $$(go.TextBlock, "Team Lead", { font: "700 13px Droid Serif, sans-serif" })
        ),
-        $$(go.Panel, "Horizontal", { row: 7, alignment: go.Spot.Left },
+       $$(go.Panel, "Horizontal", { row: 7, alignment: go.Spot.Left },
          $$(go.Shape, "Rectangle", { desiredSize: new go.Size(10, 10), fill: "#7A4785", margin: 5 }),
          $$(go.TextBlock, "Module Lead", { font: "700 13px Droid Serif, sans-serif" })
        ),
@@ -53,7 +53,7 @@
          $$(go.Shape, "Rectangle", { desiredSize: new go.Size(10, 10), fill: "#47857A", margin: 5 }),
          $$(go.TextBlock, "Designer", { font: "700 13px Droid Serif, sans-serif" })
        ),
-        $$(go.Panel, "Horizontal", { row: 11, alignment: go.Spot.Left },
+       $$(go.Panel, "Horizontal", { row: 11, alignment: go.Spot.Left },
          $$(go.Shape, "Rectangle", { desiredSize: new go.Size(10, 10), fill: "#476685", margin: 5 }),
          $$(go.TextBlock, "Tester", { font: "700 13px Droid Serif, sans-serif" })
        )
@@ -61,7 +61,10 @@
      ));
 
    myDiagram.nodeTemplate =
-     $$(go.Node, "Spot", { click: showDetail },
+     $$(go.Node, "Spot", {
+         isTreeExpanded: false,
+         click: showDetail
+       },
        $$(go.Panel, "Auto", { portId: "" },
          $$(go.Shape, { stroke: null },
            new go.Binding("fill", "color")),
